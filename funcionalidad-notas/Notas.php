@@ -11,7 +11,8 @@ class Notas{
     private $id;
 
 
-    
+
+    //creamos una funcion construct con los parametros de la propiedades
     public function __construct($nombre_de_la_nota,$descripcion_de_la_nota,$fecha_de_la_nota,$id)
     {
         $this->nombre_de_la_nota = $nombre_de_la_nota;
@@ -20,6 +21,8 @@ class Notas{
         $this->id = $id;
 
     }
+
+    //usamos los get y los set ya que las propiedades estan encapsuladas
 
     public function getNombreNota(){
         return $this->nombre_de_la_nota;
